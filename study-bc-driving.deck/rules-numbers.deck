@@ -1,0 +1,116 @@
+# Rules: Speeds, Distances & Limits
+# answer-mode: type
+# answer-case: insensitive
+# Figures from ICBC's Learn to Drive Smart guide. Hand-written — verify
+# against the current guide before trusting a number.
+
+What is the default speed limit inside cities and towns in BC, unless posted otherwise?
+---
+50 km/h
+= 50
+
+What is the default speed limit outside cities and towns in BC, unless posted otherwise?
+---
+80 km/h
+= 80
+
+What is the speed limit in a school zone?
+---
+30 km/h
+= 30
+
+On school days, school zone speed limits are in effect from 8 a.m. until what time?
+---
+5 p.m.
+= 5pm
+= 17:00
+
+What is the speed limit in a playground zone?
+---
+30 km/h
+= 30
+
+Playground zone speed limits are in effect every day from dawn until when?
+---
+dusk
+
+What is the legal blood-alcohol limit for drivers in the Graduated Licensing Program (L or N)?
+---
+zero
+= 0
+
+At what blood-alcohol concentration can a fully licensed driver receive an Immediate Roadside Prohibition?
+---
+0.05
+= .05
+
+At what blood-alcohol concentration does driving become a Criminal Code offence?
+---
+0.08
+= .08
+
+In good conditions, how many seconds of following distance should you keep behind the vehicle ahead?
+---
+2 seconds
+= 2
+
+When passing a stopped emergency vehicle where the speed limit is 80 km/h or more, slow down to what speed?
+---
+70 km/h
+= 70
+
+When passing a stopped emergency vehicle where the speed limit is under 80 km/h, slow down to what speed?
+---
+40 km/h
+= 40
+
+How close to a fire hydrant are you allowed to park?
+---
+5 metres
+= 5
+= 5 m
+
+How close to a crosswalk are you allowed to park?
+---
+6 metres
+= 6
+= 6 m
+
+How close to a railway crossing are you allowed to park?
+---
+15 metres
+= 15
+= 15 m
+
+How close to the approach side of a stop sign or traffic signal are you allowed to park?
+---
+6 metres
+= 6
+= 6 m
+
+You must use headlights from half an hour after sunset until half an hour before sunrise, and whenever visibility is less than what distance?
+---
+150 metres
+= 150
+= 150 m
+
+L drivers must not drive between midnight and what time?
+---
+5 a.m.
+= 5am
+= 5
+
+An L driver's supervisor must be at least how old?
+---
+25
+= 25 years old
+
+Besides the supervisor, how many passengers may an L driver carry?
+---
+1
+= one
+
+On most designated BC highways, winter tires are required starting October 1 until at least the end of which month?
+---
+March
+= march 31

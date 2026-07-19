@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+"""Download provincial flags and locator maps from Wikimedia Commons and
+(re)generate the image-based .deck files of the Canada pack.
+
+Flags follow Commons' systematic "Flag of <province>.svg" naming; locator
+maps follow "<Province> in Canada.svg". Each entry below carries its exact
+file title. Files are fetched as PNG renders via Special:FilePath so both
+frontends can decode them.
+
+Re-runnable: existing images are skipped, so a second run is cheap. The deck
+files are always rebuilt from the list below, skipping any entry whose image
+is missing on disk, so the decks and the images never drift apart.
+
+    python3 gen_images.py            # download missing images, rebuild decks
+    python3 gen_images.py --rebuild  # skip download, just rebuild decks
+
+provinces.deck and geography.deck are hand-authored — not touched here.
+"""
+
+import os
+import sys
+import time
+import urllib.parse
+import urllib.request
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+IMG_DIR = os.path.join(HERE, "images")
+UA = "study-canada/1.0 (personal flashcard deck; +https://commons.wikimedia.org/)"
+WIDTH = 480
+
+# (slug, name, flag file title, locator map file title, [accepted variants])
+# NOTE: cards are image-only questions — prompt text would give every card in
+# a deck the same ID (IDs hash the question's text lines).
+PROVINCES = [
+    ("alberta",                   "Alberta",                   "Flag of Alberta.svg",                   "Alberta in Canada.svg", []),
+    ("british-columbia",          "British Columbia",          "Flag of British Columbia.svg",          "British Columbia in Canada.svg", ["BC"]),
+    ("manitoba",                  "Manitoba",                  "Flag of Manitoba.svg",                  "Manitoba in Canada.svg", []),
+    ("new-brunswick",             "New Brunswick",             "Flag of New Brunswick.svg",             "New Brunswick in Canada.svg", []),
+    ("newfoundland-and-labrador", "Newfoundland and Labrador", "Flag of Newfoundland and Labrador.svg", "Newfoundland and Labrador in Canada.svg", ["Newfoundland"]),
+    ("nova-scotia",               "Nova Scotia",               "Flag of Nova Scotia.svg",               "Nova Scotia in Canada.svg", []),
+    ("ontario",                   "Ontario",                   "Flag of Ontario.svg",                   "Ontario in Canada.svg", []),
+    ("prince-edward-island",      "Prince Edward Island",      "Flag of Prince Edward Island.svg",      "Prince Edward Island in Canada.svg", ["PEI"]),
+    ("quebec",                    "Quebec",                    "Flag of Quebec.svg",                    "Quebec in Canada.svg", []),
+    ("saskatchewan",              "Saskatchewan",              "Flag of Saskatchewan.svg",              "Saskatchewan in Canada.svg", []),
+    ("northwest-territories",     "Northwest Territories",     "Flag of the Northwest Territories.svg", "Northwest Territories in Canada.svg", ["NWT"]),
+    ("nunavut",                   "Nunavut",                   "Flag of Nunavut.svg",                   "Nunavut in Canada.svg", []),
+    ("yukon",                     "Yukon",                     "Flag of Yukon.svg",                     "Yukon in Canada.svg", ["The Yukon"]),
+]
+
+DECKS = {
+    "flag": ("provincial-flags", "Canada — Provincial Flags"),
+    "map":  ("province-outlines", "Canada — Province Outlines"),
+}
+
+
+def fetch(title, dest):
+    url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(title) + f"?width={WIDTH}"
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req) as r, open(dest, "wb") as f:
+        f.write(r.read())
+
+
+def download():
+    os.makedirs(IMG_DIR, exist_ok=True)
+    for slug, _, flag, locmap, _ in PROVINCES:
+        for kind, title in (("flag", flag), ("map", locmap)):
+            dest = os.path.join(IMG_DIR, f"{slug}-{kind}.png")
+            if os.path.exists(dest):
+                continue
+            try:
+                fetch(title, dest)
+                print(f"fetched {slug}-{kind}.png")
+            except Exception as e:
+                print(f"FAILED {slug}-{kind} ({title}): {e}", file=sys.stderr)
+            time.sleep(0.4)
+
+
+def rebuild():
+    for kind, (fname, name) in DECKS.items():
+        cards = []
+        for slug, prov, _, _, accepts in PROVINCES:
+            img = os.path.join(IMG_DIR, f"{slug}-{kind}.png")
+            if not os.path.exists(img):
+                print(f"skipping {slug}-{kind}: no image", file=sys.stderr)
+                continue
+            card = f"@img images/{slug}-{kind}.png\n---\n{prov}\n"
+            for a in accepts:
+                card += f"= {a}\n"
+            cards.append(card)
+        path = os.path.join(HERE, fname + ".deck")
+        with open(path, "w") as f:
+            f.write(f"# {name}\n")
+            f.write("# answer-mode: type\n# answer-case: insensitive\n")
+            f.write("# Generated by gen_images.py — edit that script, not this file.\n\n")
+            f.write("\n".join(cards))
+
+
+if __name__ == "__main__":
+    if "--rebuild" not in sys.argv:
+        download()
+    rebuild()
