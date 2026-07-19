@@ -1,0 +1,51 @@
+# US Presidents — Lists
+# answer-mode: type
+# answer-case: insensitive
+
+Name the four presidents carved on Mount Rushmore
+---
++ George Washington
+= Washington
++ Thomas Jefferson
+= Jefferson
++ Theodore Roosevelt
+= Teddy Roosevelt
+= Roosevelt
++ Abraham Lincoln
+= Lincoln
+---
+Carved 1927–1941 in the Black Hills of South Dakota.
+
+Name the four presidents assassinated in office
+---
++ Abraham Lincoln
+= Lincoln
++ James A. Garfield
+= Garfield
+= James Garfield
++ William McKinley
+= McKinley
++ John F. Kennedy
+= JFK
+= Kennedy
+= John Kennedy
+---
+1865, 1881, 1901, 1963. Garfield and McKinley are the two everyone
+forgets.
+
+Name three of the five presidents who took office while losing the popular vote
+---
+quota: 3
++ John Quincy Adams
++ Rutherford B. Hayes
+= Hayes
+= Rutherford Hayes
++ Benjamin Harrison
++ George W. Bush
+= Bush Jr
+= George Bush Jr
++ Donald Trump
+= Trump
+---
+1824, 1876, 1888, 2000, 2016. Bush and Trump each later won the popular
+vote outright.
