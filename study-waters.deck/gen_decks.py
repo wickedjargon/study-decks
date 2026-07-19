@@ -14,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 # (question, answer, [accepted variants], note)
 DECKS = {
-    "straits": ("Waters — Straits", [
+    "straits": ("Bodies of Water — Straits", [
         ("The strait between Spain and Morocco",
          "Strait of Gibraltar", ["Gibraltar"],
          "14 km wide — Africa and Europe at their closest."),
@@ -60,7 +60,7 @@ DECKS = {
          "Øresund", ["Oresund", "The Sound"],
          "Crossed by the Øresund Bridge between Copenhagen and Malmö."),
     ]),
-    "rivers": ("Waters — Rivers", [
+    "rivers": ("Bodies of Water — Rivers", [
         ("The river through Baghdad",
          "Tigris", [],
          "The Euphrates runs west of it; the two meet to form the Shatt "
@@ -99,7 +99,7 @@ DECKS = {
         ("The river through Kyiv",
          "Dnieper", ["Dnipro"], None),
     ]),
-    "seas": ("Waters — Seas & Lakes", [
+    "seas": ("Bodies of Water — Seas & Lakes", [
         ("The gulf between Iran and the Arabian Peninsula",
          "Persian Gulf", [], None),
         ("The sea between Italy and the Balkans",
@@ -142,7 +142,7 @@ DECKS = {
 
 
 # Set-answer cards: (question, quota (0 = all), [(item, [variants])], note).
-SETS = ("Waters — Lists", [
+SETS = ("Bodies of Water — Lists", [
     ("Name the five Great Lakes", 0, [
         ("Superior", ["Lake Superior"]),
         ("Michigan", ["Lake Michigan"]),
