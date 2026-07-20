@@ -1,0 +1,118 @@
+# CompTIA A+ — Security
+
+Which malware type encrypts your files and demands payment?
+---
+Ransomware
+~ Spyware
+~ Rootkit
+~ Worm
+---
+Recovery without paying means restoring from offline backups.
+
+Which malware type spreads across a network on its own, with no user action?
+---
+Worm
+~ Virus
+~ Trojan
+~ Keylogger
+---
+A virus needs a host file and a user to run it. A trojan needs the user to install it.
+
+Which malware type disguises itself as legitimate software?
+---
+Trojan
+~ Worm
+~ Rootkit
+~ Adware
+---
+Named for the horse. It does not self-replicate, it relies on you installing it.
+
+Which malware type hides deep in the OS to conceal itself and other malware?
+---
+Rootkit
+~ Spyware
+~ Ransomware
+~ Botnet
+---
+It can intercept the very system calls a scanner would use to find it, so detection often needs a boot-time scan.
+
+Which attack sends fake emails that imitate a trusted sender to steal credentials?
+---
+Phishing
+~ Shoulder surfing
+~ Tailgating
+~ Brute force
+---
+Spear phishing targets a specific person. Whaling targets executives.
+
+What is tailgating?
+---
+Following an authorized person through a secured door
+~ Watching someone type their password
+~ Searching trash for documents
+~ Redirecting a user to a fake website
+---
+Shoulder surfing is the watching, dumpster diving is the trash.
+
+Which wireless security protocol is the current strongest?
+---
+WPA3
+~ WPA2
+~ WPA
+~ WEP
+---
+WEP and WPA with TKIP are broken. WPA2-AES remains acceptable where WPA3 is unavailable.
+
+Which encryption does WPA2 pair with?
+---
+AES
+~ TKIP
+~ RC4
+~ DES
+---
+TKIP was WPA's stopgap over WEP's RC4 and is deprecated.
+
+A password plus a code from your phone is an example of what?
+---
+Multifactor authentication
+~ Single sign-on
+~ Least privilege
+~ Federation
+---
+Something you know plus something you have. Two passwords would still be one factor.
+
+Which principle gives users only the access their job requires?
+---
+Least privilege
+~ Zero trust
+~ Defense in depth
+~ Acceptable use
+---
+Standard user accounts for daily work, admin rights only where needed.
+
+What does a screen privacy filter defend against?
+---
+Shoulder surfing
+~ Phishing
+~ Keyloggers
+~ Evil twin access points
+---
+It narrows the viewing angle so only the person in front can read the display.
+
+Which NTFS behavior applies when a file is copied to a different NTFS volume?
+---
+It inherits the destination folder's permissions
+~ It keeps its original permissions
+~ It loses all permissions
+~ It becomes read-only
+---
+Moving within the same volume keeps the original permissions. Copying always inherits.
+
+What should be done with a drive before donating an old computer?
+---
+Wipe it with a secure erase tool
+~ Delete the user folder
+~ Empty the Recycle Bin
+~ Quick-format it
+---
+Deleting and quick formatting leave the data recoverable. Physical destruction is the alternative for sensitive drives.

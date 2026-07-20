@@ -1,0 +1,136 @@
+# CompTIA A+ — Hardware
+
+Which RAM form factor do laptops use?
+---
+SODIMM
+~ DIMM
+~ SIMM
+~ CAMM
+---
+Small Outline DIMM, about half the length of a desktop DIMM.
+
+How many pins does a DDR4 desktop DIMM have?
+---
+288
+~ 240
+~ 260
+~ 184
+---
+DDR3 DIMMs have 240. DDR5 also uses 288 but is keyed differently.
+
+Which RAM type detects and corrects single-bit memory errors?
+---
+ECC
+~ Dual-channel
+~ SODIMM
+~ Registered
+---
+Error-Correcting Code memory, common in servers and workstations.
+
+Which interface gives an NVMe SSD its speed?
+---
+PCIe
+~ SATA
+~ USB
+~ SAS
+---
+NVMe drives talk PCIe directly, skipping the SATA bottleneck of about 600 MB/s.
+
+Which M.2 storage option is the fastest?
+---
+NVMe
+~ SATA M.2
+~ mSATA
+~ 2.5-inch SSD
+---
+Same slot as SATA M.2, different protocol. Check the key notch and the board manual.
+
+Which RAID level mirrors two drives with no striping?
+---
+RAID 1
+~ RAID 0
+~ RAID 5
+~ RAID 10
+---
+RAID 0 stripes for speed with no redundancy. RAID 5 stripes with parity across three or more drives.
+
+How many drives does RAID 5 require at minimum?
+---
+3
+~ 2
+~ 4
+~ 5
+---
+One drive's worth of capacity goes to parity. RAID 10 needs four.
+
+Which CPU socket type puts the pins on the motherboard?
+---
+LGA
+~ PGA
+~ BGA
+~ ZIF
+---
+Land Grid Array, used by Intel desktop sockets. PGA puts pins on the chip. BGA is soldered down.
+
+What does the CPU use thermal paste for?
+---
+Filling air gaps between the CPU and heat sink
+~ Gluing the heat sink in place
+~ Insulating the CPU electrically
+~ Lubricating the fan bearing
+---
+Air is a poor conductor. The paste fills microscopic gaps so heat reaches the sink.
+
+Which power connector feeds a modern GPU?
+---
+PCIe 8-pin
+~ Molex 4-pin
+~ SATA 15-pin
+~ EPS 4-pin
+---
+Often 6+2 pin. High-end cards take two or three, or the newer 12VHPWR.
+
+Which motherboard form factor is the smallest of the standard three?
+---
+Mini-ITX
+~ microATX
+~ ATX
+~ E-ATX
+---
+170 mm square, one expansion slot. microATX sits between it and full ATX.
+
+What is the first laser printer imaging step?
+---
+Processing
+~ Charging
+~ Exposing
+~ Cleaning
+---
+The full order: processing, charging, exposing, developing, transferring, fusing, cleaning.
+
+Which printer type uses a thermal print head and special paper?
+---
+Thermal
+~ Laser
+~ Inkjet
+~ Impact
+---
+Receipt printers. The paper darkens with heat, and fades with time and sunlight.
+
+Which printer type can print multi-part carbon forms?
+---
+Impact
+~ Laser
+~ Inkjet
+~ Thermal
+---
+Dot matrix pins physically strike the ribbon, so the impact carries through the copies.
+
+What does a UPS provide that a surge protector does not?
+---
+Battery power during an outage
+~ More outlets
+~ Faster charging
+~ Grounding
+---
+An Uninterruptible Power Supply bridges outages long enough to save work and shut down cleanly.

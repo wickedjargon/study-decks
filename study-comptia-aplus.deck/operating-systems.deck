@@ -1,0 +1,93 @@
+# CompTIA A+ — Operating Systems
+
+Which Windows command scans and repairs protected system files?
+---
+sfc /scannow
+= sfc
+---
+System File Checker. If it fails, DISM /Online /Cleanup-Image /RestoreHealth repairs the image it draws from.
+
+Which Windows command checks a disk for file system errors?
+---
+chkdsk
+---
+chkdsk /f fixes errors, /r also locates bad sectors.
+
+Which Windows command forces an immediate Group Policy refresh?
+---
+gpupdate
+= gpupdate /force
+
+Which Windows utility manages startup programs, services, and running processes?
+---
+Task Manager
+= task manager
+---
+Ctrl+Shift+Esc. Startup items moved here from msconfig in Windows 8.
+
+Which Windows console holds Device Manager, Disk Management, and Event Viewer in one window?
+---
+Computer Management
+= compmgmt.msc
+
+Which file system does Windows use by default on internal drives?
+---
+NTFS
+---
+Supports permissions, encryption, compression, and journaling. FAT32 caps files at 4 GB.
+
+Which file system works across Windows, macOS, and Linux for large files on a flash drive?
+---
+exFAT
+---
+FAT32 is equally portable but cannot hold a file over 4 GB.
+
+Which Windows edition is the minimum for joining a domain?
+---
+Pro
+= Windows Pro
+= professional
+---
+Home cannot join a domain and lacks BitLocker and the Group Policy editor.
+
+Which Linux command lists the files in a directory?
+---
+ls
+
+Which Linux command changes file permissions?
+---
+chmod
+---
+chown changes the owner instead.
+
+Which Linux command shows how much free disk space each filesystem has?
+---
+df
+= df -h
+
+Which Linux command searches text for lines matching a pattern?
+---
+grep
+
+Which Linux command elevates a single command to root privileges?
+---
+sudo
+
+Which macOS feature is its built-in backup tool?
+---
+Time Machine
+= time machine
+---
+Hourly incremental backups to an external or network drive.
+
+Which macOS folder format installs most applications?
+---
+.dmg
+= dmg
+= disk image
+---
+Mount the disk image, drag the .app to Applications, eject.
+
+Windows full-drive encryption is called {{BitLocker}}.
+---
+Pro editions and up. macOS calls its equivalent FileVault.

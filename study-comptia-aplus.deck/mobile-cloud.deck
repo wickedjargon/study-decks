@@ -1,0 +1,109 @@
+# CompTIA A+ — Mobile & Cloud
+
+Which cloud model delivers ready-to-use applications over the internet?
+---
+SaaS
+~ IaaS
+~ PaaS
+~ DaaS
+---
+Software as a Service, like Gmail or Office 365. You manage nothing but your data.
+
+Which cloud model rents raw virtual machines, storage, and networks?
+---
+IaaS
+~ SaaS
+~ PaaS
+~ FaaS
+---
+Infrastructure as a Service, like EC2. You manage the OS and everything above it.
+
+Which cloud model gives developers a managed platform to deploy code without handling servers?
+---
+PaaS
+~ IaaS
+~ SaaS
+~ DaaS
+---
+Platform as a Service, like Heroku or App Engine.
+
+A cloud used exclusively by one organization is called what?
+---
+Private cloud
+~ Public cloud
+~ Hybrid cloud
+~ Community cloud
+---
+Hybrid mixes private and public. Community is shared by organizations with common needs.
+
+What does a hypervisor do?
+---
+Runs virtual machines on physical hardware
+~ Encrypts virtual disks
+~ Balances load between servers
+~ Manages container images
+---
+Type 1 runs on bare metal, like ESXi or Hyper-V. Type 2 runs on a host OS, like VirtualBox.
+
+Which CPU feature must be enabled in firmware before VMs will run well?
+---
+Virtualization support
+~ Secure Boot
+~ XMP
+~ Hyper-Threading
+---
+Intel VT-x or AMD-V, toggled in the UEFI setup.
+
+Which mobile display technology lights each pixel individually, giving true blacks?
+---
+OLED
+~ IPS LCD
+~ TN LCD
+~ Mini-LED
+---
+No backlight. A black pixel is simply off, which also saves battery in dark mode.
+
+Which technology lets a phone make payments by holding it near a terminal?
+---
+NFC
+~ Bluetooth
+~ Wi-Fi Direct
+~ Infrared
+---
+Near Field Communication, a few centimetres of range by design.
+
+What does enabling airplane mode do?
+---
+Disables all wireless radios at once
+~ Powers the phone off
+~ Locks the SIM card
+~ Disables mobile data only
+---
+Cellular, Wi-Fi, and Bluetooth all drop, though Wi-Fi can be re-enabled on top of it.
+
+Which sync method lets corporate email enforce a passcode on an employee's phone?
+---
+MDM policies
+~ POP3
+~ NFC
+~ Location services
+---
+Mobile Device Management can require encryption, remote-wipe lost devices, and separate work data.
+
+A phone's touchscreen responds in the wrong places. What is the common name for this?
+---
+Ghost touch
+~ Burn-in
+~ Dead pixel
+~ Latency
+---
+Digitizer faults, a failing screen protector, or moisture. Calibration or screen replacement fixes it.
+
+What is the risk of installing apps from outside the official app store?
+---
+Malware from untrusted sources
+~ Higher battery drain
+~ Slower updates only
+~ Voided cellular contract
+---
+Sideloading skips the store's vetting. On the exam it is the classic cause of a compromised phone.

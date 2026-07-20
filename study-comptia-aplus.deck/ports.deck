@@ -1,0 +1,125 @@
+# CompTIA A+ — Ports & Protocols
+
+What port does FTP use for control traffic?
+---
+21
+= port 21
+---
+Port 20 carries the data connection in active mode. The pair is listed as 20/21 on the exam.
+
+What port does SSH use?
+---
+22
+= port 22
+
+What port does Telnet use?
+---
+23
+= port 23
+---
+Unencrypted remote shell. SSH on 22 replaced it.
+
+What port does SMTP use?
+---
+25
+= port 25
+---
+Sending mail between servers. Clients usually submit on 587 with TLS.
+
+What port does DNS use?
+---
+53
+= port 53
+---
+UDP for ordinary lookups, TCP for zone transfers.
+
+What ports does DHCP use?
+---
+67 and 68
+= 67/68
+= 67, 68
+= 68 and 67
+---
+The server listens on UDP 67, the client on UDP 68.
+
+What port does HTTP use?
+---
+80
+= port 80
+
+What port does POP3 use?
+---
+110
+= port 110
+---
+Downloads mail to one device. IMAP on 143 keeps it on the server.
+
+What port does IMAP use?
+---
+143
+= port 143
+
+What ports does SNMP use?
+---
+161 and 162
+= 161/162
+= 161, 162
+= 162 and 161
+---
+Agents listen on UDP 161. Traps arrive at the manager on UDP 162.
+
+What port does LDAP use?
+---
+389
+= port 389
+---
+Directory lookups, such as Active Directory queries. LDAPS uses 636.
+
+What port does HTTPS use?
+---
+443
+= port 443
+
+What port does SMB/CIFS use?
+---
+445
+= port 445
+---
+Windows file and printer sharing. Older NetBIOS transport used 137-139.
+
+What port does RDP use?
+---
+3389
+= port 3389
+
+Which protocol uses port 22?
+---
+SSH
+= secure shell
+---
+SCP and SFTP ride on it too.
+
+Which protocol uses port 3389?
+---
+RDP
+= remote desktop protocol
+= remote desktop
+
+Which protocol uses port 445?
+---
+SMB
+= CIFS
+= SMB/CIFS
+= server message block
+
+Name three protocols that use UDP rather than TCP
+---
+quota: 3
+attempts: 5
++ DHCP
++ DNS
++ SNMP
++ TFTP
++ NTP
+---
+DNS uses both, but ordinary lookups are UDP. TCP protocols to rule out: HTTP, HTTPS, SSH, FTP, Telnet, SMTP, RDP.

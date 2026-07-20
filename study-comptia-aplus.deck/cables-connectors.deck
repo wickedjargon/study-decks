@@ -1,0 +1,109 @@
+# CompTIA A+ — Cables & Connectors
+
+What is the maximum speed of USB 2.0?
+---
+480 Mbps
+~ 12 Mbps
+~ 5 Gbps
+~ 480 Gbps
+---
+Hi-Speed. USB 1.1 tops out at 12 Mbps, USB 3.0 at 5 Gbps.
+
+What is the maximum speed of USB 3.0 (USB 3.1 Gen 1)?
+---
+5 Gbps
+~ 480 Mbps
+~ 10 Gbps
+~ 20 Gbps
+---
+SuperSpeed, usually a blue port. Gen 2 doubles it to 10 Gbps.
+
+Which connector does a wired Ethernet LAN cable use?
+---
+RJ45
+~ RJ11
+~ F-type
+~ BNC
+---
+Eight pins. RJ11 is the smaller six-position phone jack used by DSL.
+
+Which cable standard is rated for 10 Gbps at a full 100 metres?
+---
+Cat 6a
+~ Cat 5e
+~ Cat 6
+~ Cat 3
+---
+Plain Cat 6 manages 10 Gbps only to about 55 metres. Cat 5e is rated for 1 Gbps.
+
+Which connector does coaxial cable for cable internet use?
+---
+F-type
+~ RJ45
+~ BNC
+~ SC
+---
+The screw-on connector on RG-6 coax from the cable company.
+
+Which cable type is immune to electromagnetic interference?
+---
+Fiber optic
+~ Shielded twisted pair
+~ Coaxial
+~ Cat 6a
+---
+It carries light, not electricity. It also spans kilometres where copper is limited to 100 metres.
+
+What is the maximum SATA III transfer rate?
+---
+6 Gbps
+~ 3 Gbps
+~ 1.5 Gbps
+~ 16 Gbps
+---
+About 600 MB/s in practice, which is why fast SSDs moved to NVMe over PCIe.
+
+Which video connector carries analog signal only?
+---
+VGA
+~ HDMI
+~ DisplayPort
+~ DVI-D
+---
+The blue 15-pin D-sub. DVI-D and HDMI are digital only, DVI-I carries both.
+
+Which connector do both Thunderbolt 3 and 4 use?
+---
+USB-C
+~ Mini DisplayPort
+~ USB-A
+~ Lightning
+---
+Thunderbolt 1 and 2 used Mini DisplayPort. Look for the lightning-bolt icon to tell a plain USB-C port apart.
+
+Which video interface commonly carries audio along with video?
+---
+HDMI
+~ VGA
+~ DVI-D
+~ Composite
+---
+DisplayPort does too. VGA and DVI carry video only.
+
+Which internal drive connector supplies power in a modern desktop?
+---
+SATA 15-pin
+~ Molex 4-pin
+~ Berg 4-pin
+~ PCIe 6-pin
+---
+The flat 15-pin plug from the PSU. Molex survives mainly on fans and old drives.
+
+What does a punchdown tool do?
+---
+Seats wires into a keystone jack or patch panel
+~ Crimps RJ45 plugs onto cable
+~ Tests continuity of each pair
+~ Traces a cable inside a wall
+---
+The crimper handles plugs. A toner probe traces the cable. A cable tester checks the pairs.

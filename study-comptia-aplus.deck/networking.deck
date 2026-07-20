@@ -1,0 +1,106 @@
+# CompTIA A+ — Networking
+
+Wi-Fi 5 is the marketing name for 802.11{{ac}}.
+---
+Wi-Fi 4 is 802.11n, Wi-Fi 6 is 802.11ax.
+
+Wi-Fi 6 is the marketing name for 802.11{{ax}}.
+---
+Adds OFDMA and works on both 2.4 and 5 GHz. Wi-Fi 6E extends it to 6 GHz.
+
+Which two frequency bands does 802.11n use?
+---
+2.4 GHz and 5 GHz
+= 2.4 and 5 GHz
+= 2.4/5 GHz
+= 5 GHz and 2.4 GHz
+= 5 and 2.4 GHz
+---
+2.4 GHz travels farther but is crowded. 5 GHz is faster with more channels.
+
+An address in 169.254.0.0/16 means the client failed to reach a {{DHCP}} server.
+---
+APIPA, Automatic Private IP Addressing. The machine self-assigns and can only talk to the local link.
+
+What is the private class C address range?
+---
+192.168.0.0 to 192.168.255.255
+= 192.168.0.0/16
+= 192.168.x.x
+= 192.168.0.0 - 192.168.255.255
+---
+The other private ranges: 10.0.0.0/8 and 172.16.0.0 to 172.31.255.255.
+
+The private class A range is {{10}}.0.0.0/8.
+---
+Sixteen million addresses. Common in large corporate networks.
+
+What is the default subnet mask for a /24 network?
+---
+255.255.255.0
+---
+254 usable host addresses.
+
+Which DNS record type maps a hostname to an IPv4 address?
+---
+A
+= A record
+---
+AAAA maps to IPv6. MX names the mail server. CNAME is an alias.
+
+Which DNS record type directs a domain's incoming mail?
+---
+MX
+= MX record
+= mail exchange
+= mail exchanger
+
+Which device connects a LAN to the internet and picks paths between networks?
+---
+router
+= a router
+---
+A switch forwards frames inside one LAN by MAC address. The router works at layer 3.
+
+What does NAT do?
+---
+Translates private IP addresses to a public one
+= translates private addresses to public
+= network address translation
+---
+It is how a whole home LAN shares one public IPv4 address.
+
+Which service assigns IP addresses to clients automatically?
+---
+DHCP
+= dynamic host configuration protocol
+---
+It leases the address, mask, gateway, and DNS servers.
+
+Which network type is a smartphone's Bluetooth connection an example of?
+---
+PAN
+= personal area network
+---
+LAN is a building, WAN spans cities, MAN spans a metro area.
+
+What does a switch use to decide which port a frame goes out?
+---
+MAC address
+= MAC
+= MAC addresses
+= the MAC address
+---
+It learns which MAC lives on which port and forwards instead of broadcasting.
+
+Which command shows your IP address on Windows?
+---
+ipconfig
+---
+ipconfig /all adds MAC, DHCP, and DNS detail. Linux and macOS use ip addr or ifconfig.
+
+Which command traces the route packets take to a host on Windows?
+---
+tracert
+---
+Linux and macOS call it traceroute. Each hop is a router along the path.

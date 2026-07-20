@@ -1,0 +1,137 @@
+# CompTIA A+ — Troubleshooting
+
+What is step 1 of the CompTIA troubleshooting methodology?
+---
+Identify the problem
+= identify problem
+---
+The full order: identify the problem, establish a theory, test the theory, plan and implement, verify and prevent, document.
+
+In the troubleshooting methodology, what comes right after testing the theory?
+---
+Establish a plan of action
+= plan of action
+= establish a plan
+= establish a plan of action and implement the solution
+---
+Then implement it, verify full functionality with preventive measures, and document everything.
+
+What is the final step of the troubleshooting methodology?
+---
+Document findings, actions, and outcomes
+= document
+= documentation
+= document findings
+---
+The step everyone skips. Next time the fix takes minutes instead of hours.
+
+Name the six steps of the CompTIA troubleshooting methodology
+---
+quota: 6
+attempts: 9
++ Identify the problem
+= identify
++ Establish a theory of probable cause
+= establish a theory
+= theory
++ Test the theory
+= test
++ Establish a plan of action and implement the solution
+= plan of action
+= implement
++ Verify full system functionality
+= verify
++ Document findings, actions, and outcomes
+= document
+
+Name the seven laser printer imaging steps
+---
+quota: 7
+attempts: 10
++ Processing
++ Charging
++ Exposing
++ Developing
++ Transferring
++ Fusing
++ Cleaning
+---
+In that order. The fuser melts the toner onto the page, which is why fresh prints are warm.
+
+A laser-printed page smears when touched. Which component has failed?
+---
+fuser
+= the fuser
+= fuser assembly
+= fuser unit
+---
+The fuser's heat and pressure bond toner to paper. No fusing, no bond.
+
+Repeated marks appear at regular intervals down every laser-printed page. What is the likely cause?
+---
+a damaged drum
+= drum
+= the drum
+= imaging drum
+= a damaged roller
+= dirty roller
+---
+The drum's circumference sets the repeat distance. A scratch or debris prints once per rotation.
+
+A PC powers on but shows nothing, and emits a pattern of beeps. What is the beeping?
+---
+a POST beep code
+= POST beep code
+= beep code
+= POST code
+= POST error
+---
+The BIOS reporting a hardware fault it found before video works. The pattern's meaning is board-specific.
+
+The system clock resets every time a PC is unplugged. What should be replaced?
+---
+the CMOS battery
+= CMOS battery
+= motherboard battery
+= CR2032
+---
+The coin cell that keeps the real-time clock running without power.
+
+An LCD shows an image so dim it is only visible under a flashlight. What has failed?
+---
+the backlight
+= backlight
+= backlight or inverter
+= inverter
+---
+The panel is still drawing the image. On old CCFL panels the inverter powering the lamp is the usual culprit.
+
+A PC intermittently reboots under heavy load. What is the most likely hardware cause?
+---
+overheating
+= thermal
+= heat
+= CPU overheating
+= failing power supply
+= PSU
+---
+Check fans, heat sink dust, and thermal paste first, then the PSU under load.
+
+Windows shows a spinning cursor and 100% disk usage on an old laptop with a hard drive. What upgrade helps most?
+---
+replace the hard drive with an SSD
+= SSD
+= an SSD
+= install an SSD
+= upgrade to SSD
+---
+A spinning disk at 100% is the classic bottleneck. An SSD is the single largest perceived speedup.
+
+A phone's battery drains fast and the case has begun to bulge. What should the user do?
+---
+stop using it and replace the battery
+= replace the battery
+= stop using it
+= battery replacement
+---
+A swollen lithium battery is a fire risk. Do not puncture it, and recycle it properly.
