@@ -1,8 +1,8 @@
 # Canada — Geography
 # answer-mode: type
 # answer-case: insensitive
-# Cloze cards ({{...}}, no separator) can't carry notes — the note syntax
-# needs the --- separators. Facts that deserve a note are typed cards here.
+# Cloze cards may carry a note: cloze --- note. The deletion stays the
+# answer; the section after the separator is shown after answering.
 
 Canada's longest river is the {{Mackenzie}}.
 
