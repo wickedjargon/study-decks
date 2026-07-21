@@ -1,0 +1,86 @@
+# CompTIA A+ — Operational Procedures
+
+Which tool protects components from ESD while you work inside a case?
+---
+anti-static wrist strap
+= antistatic wrist strap
+= anti-static strap
+= ESD strap
+= wrist strap
+---
+Clip it to unpainted chassis metal. Parts in transit go in anti-static bags.
+
+Which environmental condition increases the risk of ESD?
+---
+low humidity
+= dry air
+= low humidity levels
+---
+Dry air builds static charge. Very high humidity risks condensation instead.
+
+Which component stores dangerous voltage even when unplugged?
+---
+Power supply
+~ RAM stick
+~ NVMe SSD
+~ CMOS battery
+---
+Its capacitors hold charge after power-off. CRT monitors and laser printer fusers are the other classic keep-out zones.
+
+Which file extension is a PowerShell script?
+---
+.ps1
+= ps1
+---
+.bat is the old cmd.exe batch language. .vbs is VBScript.
+
+Which file extension is a Windows batch file?
+---
+.bat
+= bat
+---
+Runs in cmd.exe. PowerShell scripts use .ps1.
+
+Which file extension is a Linux shell script?
+---
+.sh
+= sh
+---
+Needs execute permission first: chmod +x.
+
+Which file extension is a Python script?
+---
+.py
+= py
+---
+Cross-platform, but the interpreter must be installed.
+
+Which backup type copies everything regardless of when it last changed?
+---
+full
+= full backup
+---
+Slowest to make, fastest to restore.
+
+Which backup type copies only what changed since the last backup of any kind?
+---
+incremental
+= incremental backup
+---
+Fast to make, but a restore needs the full plus every incremental since.
+
+Which backup type copies everything changed since the last full backup?
+---
+differential
+= differential backup
+---
+A restore needs just the full plus the latest differential.
+
+What does the 3-2-1 backup rule call for?
+---
+3 copies on 2 different media with 1 offsite
+~ 3 backups a day, 2 of them verified, 1 archived
+~ 3 drives split into 2 partitions and 1 folder
+~ 3 fulls, 2 incrementals, 1 differential
+---
+The offsite copy survives fire and theft. Cloud storage counts as offsite.

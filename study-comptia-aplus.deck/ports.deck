@@ -87,6 +87,16 @@ What port does SMB/CIFS use?
 ---
 Windows file and printer sharing. Older NetBIOS transport used 137-139.
 
+What ports does NetBIOS/NetBT use?
+---
+137-139
+= 137, 138, 139
+= 137 to 139
+= 137 138 139
+= 137/138/139
+---
+Legacy Windows name service and session transport. Modern SMB talks directly on 445.
+
 What port does RDP use?
 ---
 3389
