@@ -81,12 +81,14 @@ Disables all wireless radios at once
 ---
 Cellular, Wi-Fi, and Bluetooth all drop, though Wi-Fi can be re-enabled on top of it.
 
-Which sync method lets corporate email enforce a passcode on an employee's phone?
+Which mobile management technology lets corporate IT enforce a passcode on an employee's phone?
 ---
-MDM policies
-~ POP3
+MDM
+= MDM policies
+= mobile device management
 ~ NFC
 ~ Location services
+~ Screen mirroring
 ---
 Mobile Device Management can require encryption, remote-wipe lost devices, and separate work data.
 

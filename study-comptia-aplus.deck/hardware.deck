@@ -1,6 +1,6 @@
 # CompTIA A+ — Hardware
 
-Which RAM form factor do laptops use?
+Which RAM form factor do most laptops use?
 ---
 SODIMM
 ~ DIMM
@@ -36,7 +36,7 @@ PCIe
 ---
 NVMe drives talk PCIe directly, skipping the SATA bottleneck of about 600 MB/s.
 
-Which M.2 storage option is the fastest?
+Which SSD option is the fastest?
 ---
 NVMe
 ~ SATA M.2
@@ -86,7 +86,7 @@ Which power connector feeds a modern GPU?
 PCIe 8-pin
 ~ Molex 4-pin
 ~ SATA 15-pin
-~ EPS 4-pin
+~ EPS12V 8-pin
 ---
 Often 6+2 pin. High-end cards take two or three, or the newer 12VHPWR.
 

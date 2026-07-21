@@ -80,7 +80,7 @@ Time Machine
 ---
 Hourly incremental backups to an external or network drive.
 
-Which macOS folder format installs most applications?
+Which macOS file format is used to distribute most application installers?
 ---
 .dmg
 = dmg
