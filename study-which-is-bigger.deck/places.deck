@@ -1,7 +1,7 @@
 # Which Is Bigger? — Places
-# order: sequential
-# preview-new: off
+# kind: trivia
 # answer-mode: choice
+# wrong-pause: 5
 
 Bigger by area: Australia or Greenland?
 ---

@@ -1,7 +1,5 @@
 # Trivia — Movie Taglines
-# order: sequential
-# preview-new: off
-# answer-case: insensitive
+# kind: trivia
 
 "In space no one can hear you scream."
 ---

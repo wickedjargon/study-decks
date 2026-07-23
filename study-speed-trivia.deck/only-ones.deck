@@ -1,7 +1,5 @@
 # Trivia — The Only One
-# order: sequential
-# preview-new: off
-# answer-case: insensitive
+# kind: trivia
 
 The only country whose name starts with Q
 ---
