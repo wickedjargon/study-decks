@@ -1,0 +1,145 @@
+# AWS CCP — Billing, Pricing & Support
+
+Which EC2 pricing model has no commitment and bills by the second or hour?
+---
+On-Demand
+~ Reserved Instances
+~ Spot Instances
+~ Savings Plans
+---
+The most expensive per hour and the baseline every discount is measured against.
+
+Which pricing option offers the deepest discount, up to 90%, for workloads that tolerate interruption?
+---
+Spot Instances
+~ Reserved Instances
+~ Savings Plans
+~ Dedicated Hosts
+---
+AWS can reclaim Spot capacity with a two-minute warning. Great for batch, wrong for databases.
+
+Which pricing model commits to a consistent amount of compute spend per hour for 1 or 3 years, flexible across instance types?
+---
+Savings Plans
+~ Reserved Instances
+~ Spot Instances
+~ On-Demand
+---
+Similar discounts to Reserved Instances (up to 72%) with more flexibility.
+
+Which option gives you an entire physical server, often for bring-your-own-license software?
+---
+Dedicated Hosts
+~ Reserved Instances
+~ Spot Instances
+~ Savings Plans
+---
+Visibility into sockets and cores for per-socket licensing. The priciest way to run EC2.
+
+Which direction of data transfer is generally free?
+---
+Inbound to AWS
+~ Outbound to the internet
+~ Both directions
+~ Neither direction
+---
+Egress is billed. That asymmetry shapes a lot of architectures.
+
+The AWS Free Tier has three offer types: always free, {{12 months}} free, and short-term trials.
+---
+Lambda's million requests per month never expires. The EC2 750 micro-instance hours end after a year.
+
+Which tool visualizes your historical AWS spend with graphs and forecasts?
+---
+Cost Explorer
+= AWS Cost Explorer
+---
+Filter by service, account, or tag. Forecasts are based on past usage.
+
+Which service sends an alert when your spend or usage crosses a threshold you set?
+---
+Budgets
+= AWS Budgets
+---
+Budgets can also alert on Reserved Instance and Savings Plans utilization.
+
+Which billing tool provides the most detailed, line-item usage data?
+---
+Cost and Usage Report
+~ Cost Explorer
+~ The billing dashboard
+~ Trusted Advisor
+---
+Delivered to an S3 bucket for analysis with Athena or your own tooling.
+
+Which tool estimates the monthly cost of an architecture before you build it?
+---
+Pricing Calculator
+= AWS Pricing Calculator
+---
+Shareable estimates per service and Region. It replaced the old Simple Monthly Calculator.
+
+Which service centrally manages multiple AWS accounts and combines their usage into one bill?
+---
+Organizations
+= AWS Organizations
+---
+Consolidated billing aggregates usage across accounts, so volume discounts kick in sooner.
+
+What do Service Control Policies (SCPs) do?
+---
+Set the maximum permissions available to accounts in an organization
+~ Grant permissions to IAM users
+~ Encrypt data shared between accounts
+~ Split one bill across accounts
+---
+SCPs never grant anything. They are guardrails that cap what account admins can allow.
+
+Cost allocation {{tags}} let you break the bill down by project, team, or environment.
+---
+Activate them in the billing console or they never show up in Cost Explorer.
+
+Which support plan is included free with every AWS account?
+---
+Basic
+~ Developer
+~ Business
+~ Enterprise
+---
+Account and billing help plus documentation. No technical support cases.
+
+Which is the cheapest support plan with 24/7 phone and chat access to engineers?
+---
+Business
+~ Developer
+~ Basic
+~ Enterprise On-Ramp
+---
+Developer is business-hours email only. Business also unlocks full Trusted Advisor checks.
+
+Which support plan includes a designated Technical Account Manager?
+---
+Enterprise
+~ Business
+~ Enterprise On-Ramp
+~ Developer
+---
+Enterprise On-Ramp offers a pool of TAMs. Enterprise assigns you your own.
+
+On the Enterprise support plan, business-critical outages get a response within {{15}} minutes.
+---
+Business plan promises 1 hour for production down, Enterprise On-Ramp 30 minutes for business-critical.
+
+Which tool checks your account against best practices for cost, performance, security, fault tolerance, and service quotas?
+---
+Trusted Advisor
+= AWS Trusted Advisor
+---
+Everyone gets the core security checks. The full set needs Business support or higher.
+
+Where do you buy third-party software preconfigured to run on AWS?
+---
+Marketplace
+= AWS Marketplace
+---
+Charges land on your AWS bill. Many listings bill by the hour like the infrastructure under them.

@@ -1,0 +1,105 @@
+# AWS CCP — Compute
+
+Which service provides resizable virtual servers in the cloud?
+---
+EC2
+= Amazon EC2
+= Elastic Compute Cloud
+---
+The original AWS compute service. You pick the instance type, AMI, and network.
+
+What does AMI stand for?
+---
+Amazon Machine Image
+= machine image
+---
+The template (OS plus installed software) an instance launches from.
+
+Which service runs your code in response to events with no servers to manage?
+---
+Lambda
+= AWS Lambda
+---
+Pay per request and per millisecond. A single invocation can run at most 15 minutes.
+
+Which service is AWS's own container orchestrator?
+---
+ECS
+= Amazon ECS
+= Elastic Container Service
+---
+The AWS-native way to run Docker containers. EKS is the Kubernetes alternative.
+
+Which service runs managed Kubernetes clusters?
+---
+EKS
+= Amazon EKS
+= Elastic Kubernetes Service
+---
+For teams already invested in Kubernetes. ECS is simpler if you are not.
+
+Which serverless engine runs containers without any EC2 instances to manage?
+---
+Fargate
+= AWS Fargate
+---
+A launch type for both ECS and EKS. You size the task, AWS finds the compute.
+
+Which service stores and distributes your container images?
+---
+ECR
+= Amazon ECR
+= Elastic Container Registry
+---
+The AWS-hosted alternative to Docker Hub, wired into ECS and EKS permissions.
+
+Which service takes just your application code and handles provisioning, load balancing, and scaling for you?
+---
+Elastic Beanstalk
+= AWS Elastic Beanstalk
+= Beanstalk
+---
+The AWS PaaS answer. You still keep full access to the EC2 instances underneath.
+
+Which service offers simple virtual private servers with predictable monthly pricing?
+---
+Lightsail
+= Amazon Lightsail
+---
+Bundled compute, storage, and networking. The easy on-ramp for small sites and blogs.
+
+An EC2 {{Auto Scaling}} group adds or removes instances automatically to match demand.
+---
+Scale on a schedule, on metrics, or to maintain a fixed healthy count.
+
+Which service distributes incoming traffic across multiple targets such as EC2 instances?
+---
+ELB
+= Elastic Load Balancing
+= Elastic Load Balancer
+= load balancer
+---
+Pairs with Auto Scaling: one spreads the traffic, the other sizes the fleet.
+
+Which load balancer type routes HTTP and HTTPS requests with path-based rules?
+---
+Application Load Balancer
+~ Network Load Balancer
+~ Gateway Load Balancer
+~ Classic Load Balancer
+---
+Layer 7. Network Load Balancer is layer 4 for TCP at extreme throughput.
+
+Which service runs AWS infrastructure and services inside your own data center?
+---
+Outposts
+= AWS Outposts
+---
+A rack AWS delivers and manages on your premises. The heavyweight hybrid option.
+
+Which service plans, schedules, and runs very large numbers of batch computing jobs?
+---
+Batch
+= AWS Batch
+---
+It provisions the compute (including Spot) for you. Not to be confused with Lambda's 15-minute jobs.

@@ -1,0 +1,174 @@
+# AWS CCP — Cloud Concepts
+
+Which of the six advantages of cloud computing means you pay only for what you consume instead of buying data centers up front?
+---
+Trade fixed expense for variable expense
+~ Go global in minutes
+~ Stop guessing capacity
+~ Benefit from massive economies of scale
+---
+The classic capex-to-opex argument. No hardware purchase before you know your demand.
+
+Which cloud advantage means you no longer estimate infrastructure needs before launch?
+---
+Stop guessing capacity
+~ Increase speed and agility
+~ Trade fixed expense for variable expense
+~ Benefit from massive economies of scale
+---
+Scale with actual demand instead of over-provisioning or hitting a ceiling.
+
+Because AWS aggregates usage from many customers, prices fall as it grows. This advantage is called massive {{economies of scale}}.
+---
+Hundreds of thousands of customers sharing infrastructure drives per-unit cost down.
+
+Which cloud deployment model connects on-premises infrastructure to cloud resources?
+---
+Hybrid
+~ Public cloud
+~ Private cloud
+~ Multi-cloud
+---
+Typically linked with a Site-to-Site VPN or Direct Connect.
+
+In which service model do you manage the operating system and everything above it, while the provider manages the hardware?
+---
+IaaS
+~ PaaS
+~ SaaS
+~ On-premises
+---
+Infrastructure as a Service. EC2 is the classic example.
+
+In which service model do you bring only code and data, while the provider runs the platform underneath?
+---
+PaaS
+~ IaaS
+~ SaaS
+~ On-premises
+---
+Platform as a Service. Elastic Beanstalk is the AWS example.
+
+Which service model delivers a finished application you simply use, like web email?
+---
+SaaS
+~ IaaS
+~ PaaS
+~ FaaS
+---
+Software as a Service. You manage nothing but your data and users.
+
+How many pillars does the AWS Well-Architected Framework have?
+---
+6
+~ 4
+~ 5
+~ 7
+---
+Operational excellence, security, reliability, performance efficiency, cost optimization, sustainability.
+
+Which Well-Architected pillar is about recovering from failure and scaling to meet demand?
+---
+Reliability
+~ Performance efficiency
+~ Operational excellence
+~ Cost optimization
+---
+Multi-AZ deployments and automatic recovery are its bread and butter.
+
+Which Well-Architected pillar, added in 2021, is about minimizing environmental impact?
+---
+Sustainability
+~ Cost optimization
+~ Performance efficiency
+~ Reliability
+---
+The sixth and newest pillar.
+
+The ability to automatically acquire resources as demand rises and release them as it falls is called {{elasticity}}.
+---
+Scalability is being able to grow. Elasticity is doing it automatically, in both directions.
+
+Adding more instances to share the load is called {{horizontal}} scaling.
+---
+Also called scaling out. Vertical scaling (scaling up) means a bigger instance instead.
+
+A system that keeps operating with zero downtime even while components fail is called {{fault tolerant}}.
+---
+High availability allows a brief interruption during failover. Fault tolerance allows none.
+
+Which migration strategy moves an application to the cloud unchanged, also known as lift and shift?
+---
+Rehost
+~ Replatform
+~ Refactor
+~ Repurchase
+---
+The fastest of the 7 Rs. No code changes.
+
+Which migration strategy makes a few cloud optimizations without changing the core architecture?
+---
+Replatform
+~ Rehost
+~ Refactor
+~ Retain
+---
+Lift, tinker, and shift. For example moving the database to RDS on the way.
+
+Which migration strategy redesigns an application to be cloud-native?
+---
+Refactor
+~ Rehost
+~ Replatform
+~ Repurchase
+---
+Also called re-architect. Most expensive up front, biggest long-term payoff.
+
+Which migration strategy replaces a self-hosted application with a SaaS product?
+---
+Repurchase
+~ Retire
+~ Retain
+~ Relocate
+---
+Drop and shop. The remaining Rs: retire it, retain it on-prem, or relocate (e.g. VMware to AWS).
+
+Which AWS framework guides cloud migration across Business, People, Governance, Platform, Security, and Operations perspectives?
+---
+Cloud Adoption Framework
+= CAF
+= AWS CAF
+= the Cloud Adoption Framework
+---
+The CAF is about organizational readiness. Well-Architected is about workload design.
+
+An AWS {{Region}} is a physical location in the world consisting of multiple isolated Availability Zones.
+---
+Regions are fully independent of each other. Pick one near your users or where the law requires.
+
+What is an Availability Zone?
+---
+One or more discrete data centers with redundant power and networking
+~ A country where AWS operates
+~ A CloudFront cache location
+~ A subnet inside a VPC
+---
+AZs in a Region are close enough for low-latency links but isolated from each other's failures.
+
+Every AWS Region contains at least how many Availability Zones?
+---
+3
+~ 1
+~ 2
+~ 6
+---
+Spreading a workload across multiple AZs is the standard high-availability pattern.
+
+Which part of the AWS global infrastructure caches content close to users for CloudFront?
+---
+Edge locations
+~ Availability Zones
+~ Regions
+~ Local Zones
+---
+There are hundreds of edge locations, far more than Regions.

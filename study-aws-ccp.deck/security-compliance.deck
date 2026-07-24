@@ -1,0 +1,175 @@
+# AWS CCP — Security & Compliance
+
+In the shared responsibility model, AWS is responsible for security {{of}} the cloud. Customers are responsible for security in the cloud.
+---
+AWS runs the facilities, hardware, and hypervisor. You secure what you build on top.
+
+Who is responsible for patching the guest operating system on an EC2 instance?
+---
+The customer
+~ AWS
+~ Both equally
+~ The AWS Marketplace vendor
+---
+AWS patches the hypervisor and hardware. Everything inside your instance is yours.
+
+Who is responsible for the physical security of AWS data centers?
+---
+AWS
+~ The customer
+~ Both equally
+~ A third-party auditor
+---
+Customers never see the inside of a data center. Compliance reports in AWS Artifact cover it.
+
+Who is responsible for enabling encryption on data stored in S3?
+---
+The customer
+~ AWS
+~ Both equally
+~ No one, S3 rejects unencrypted data
+---
+AWS provides the tools (SSE, KMS) but configuring protection of customer data is on you.
+
+Which service controls who can do what in your AWS account with users, groups, roles, and policies?
+---
+IAM
+= AWS IAM
+= Identity and Access Management
+---
+Global service, no charge. The foundation every other service's permissions rest on.
+
+Which IAM identity should an application running on EC2 use to get credentials?
+---
+An IAM role
+~ An IAM user with access keys
+~ The root user
+~ An IAM group
+---
+Roles hand out temporary credentials. Never bake long-lived access keys into an instance.
+
+What is an IAM policy?
+---
+A JSON document that allows or denies actions on resources
+~ A password rule for the account
+~ A firewall rule for a VPC
+~ A billing alert threshold
+---
+Attach policies to users, groups, or roles. An explicit deny always wins.
+
+Granting only the permissions a task actually requires is the principle of least {{privilege}}.
+---
+Start from nothing and add what is needed, not the other way around.
+
+What is the best practice for the account root user?
+---
+Enable MFA and use it only for tasks that require it
+~ Use it for daily administration
+~ Share its credentials with all admins
+~ Delete it after creating an admin user
+---
+Almost everything should be done by IAM identities. The root user cannot be deleted.
+
+What does MFA stand for?
+---
+multi-factor authentication
+= multifactor authentication
+= multi factor authentication
+---
+Something you know plus something you have. Turn it on for root first.
+
+Which service provides single sign-on access to multiple AWS accounts and business applications?
+---
+IAM Identity Center
+= AWS IAM Identity Center
+= Identity Center
+= AWS SSO
+---
+The successor to AWS Single Sign-On.
+
+Which service continuously monitors your account for threats and malicious activity using machine learning?
+---
+GuardDuty
+= Amazon GuardDuty
+---
+It analyzes CloudTrail events, VPC Flow Logs, and DNS logs. Detection only, it does not block.
+
+Which service scans EC2 instances and container images for software vulnerabilities?
+---
+Inspector
+= Amazon Inspector
+---
+Think CVEs and unintended network exposure. GuardDuty watches behavior, Inspector checks software.
+
+Which service uses machine learning to discover sensitive data such as PII in S3 buckets?
+---
+Macie
+= Amazon Macie
+---
+Personally identifiable information: names, card numbers, credentials.
+
+Which service protects applications against DDoS attacks?
+---
+Shield
+= AWS Shield
+---
+Shield Standard is free and always on. Shield Advanced adds cost protection and a response team.
+
+Which service filters malicious web requests such as SQL injection and cross-site scripting?
+---
+WAF
+= AWS WAF
+= web application firewall
+---
+Sits in front of CloudFront, ALB, or API Gateway with allow, block, and rate-based rules.
+
+Which service creates and manages the encryption keys used across AWS?
+---
+KMS
+= AWS KMS
+= Key Management Service
+---
+Most services encrypt at rest with a checkbox because KMS is behind it.
+
+Which service provides dedicated, single-tenant hardware modules for storing encryption keys?
+---
+CloudHSM
+~ KMS
+~ Secrets Manager
+~ Certificate Manager
+---
+KMS is managed and multi-tenant. CloudHSM gives you your own device for strict compliance regimes.
+
+Which service stores database credentials and API keys and rotates them automatically?
+---
+Secrets Manager
+= AWS Secrets Manager
+---
+Rotation without redeploying code. Parameter Store is the free cousin without built-in rotation.
+
+Which service aggregates findings from GuardDuty, Inspector, and Macie into a single dashboard?
+---
+Security Hub
+= AWS Security Hub
+---
+One score, one feed, checks against standards like CIS.
+
+Which service gives on-demand access to AWS compliance reports such as SOC and PCI?
+---
+Artifact
+= AWS Artifact
+---
+Self-service downloads for your auditors. No support ticket needed.
+
+A security group is {{stateful}}, so return traffic for an allowed connection is automatically allowed.
+---
+Network ACLs are stateless and evaluate rules in both directions.
+
+At which level does a security group operate?
+---
+The instance level
+~ The subnet level
+~ The VPC level
+~ The Region level
+---
+Network ACLs operate at the subnet level. Security groups only have allow rules, NACLs have both.

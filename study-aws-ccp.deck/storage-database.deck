@@ -1,0 +1,171 @@
+# AWS CCP — Storage & Databases
+
+Which service stores objects in buckets with virtually unlimited capacity?
+---
+S3
+= Amazon S3
+= Simple Storage Service
+---
+Objects up to 5 TB, addressed by key. Not a filesystem and not attachable to an instance.
+
+S3 is designed for {{11}} nines (99.999999999%) of durability.
+---
+Durability is about not losing the object. Availability, which varies by storage class, is about reaching it now.
+
+Which S3 storage class automatically moves objects between access tiers based on usage?
+---
+Intelligent-Tiering
+~ Standard-IA
+~ One Zone-IA
+~ Glacier Flexible Retrieval
+---
+For data with unpredictable access patterns. A small monitoring fee replaces guessing.
+
+Which S3 storage class is the cheapest for archives you can wait about 12 hours to retrieve?
+---
+Glacier Deep Archive
+~ Glacier Instant Retrieval
+~ Standard-IA
+~ One Zone-IA
+---
+The lowest-cost storage on AWS. Think compliance archives kept for years.
+
+Which S3 storage class offers archive-level pricing with millisecond retrieval?
+---
+Glacier Instant Retrieval
+~ Glacier Flexible Retrieval
+~ Glacier Deep Archive
+~ Standard
+---
+For data touched about once a quarter. Flexible Retrieval takes minutes to hours instead.
+
+S3 {{lifecycle}} rules transition objects to cheaper storage classes or expire them on a schedule.
+---
+Standard to Standard-IA to Glacier to deletion, all automatic.
+
+Which service provides block storage volumes that attach to EC2 instances?
+---
+EBS
+= Amazon EBS
+= Elastic Block Store
+---
+A volume lives in one Availability Zone. Snapshots go to S3 and cross that boundary.
+
+What happens to data on an instance store when the instance stops?
+---
+It is lost
+~ It persists until deleted
+~ It is snapshotted automatically
+~ It moves to S3
+---
+Instance store is ephemeral disk physically attached to the host. Use EBS for anything durable.
+
+Which service provides a shared network file system that many Linux instances can mount at once?
+---
+EFS
+= Amazon EFS
+= Elastic File System
+---
+NFS, grows and shrinks automatically, spans multiple AZs.
+
+Which service gives Windows servers a native SMB file share?
+---
+FSx for Windows File Server
+= Amazon FSx
+= FSx
+---
+The FSx family also covers Lustre for high-performance computing.
+
+Which hybrid service gives on-premises applications access to cloud storage?
+---
+Storage Gateway
+= AWS Storage Gateway
+---
+File, volume, and tape flavors. The tape one replaces physical backup tapes with S3.
+
+Which family of rugged physical devices ships your data to AWS when the network is too slow?
+---
+Snowball
+= AWS Snowball
+= Snowball Edge
+= Snow family
+---
+Weeks of uploading become a courier trip. Snowball Edge also runs compute at remote sites.
+
+Which managed service runs relational engines like MySQL and PostgreSQL, handling backups and patching for you?
+---
+RDS
+= Amazon RDS
+= Relational Database Service
+---
+Also MariaDB, Oracle, and SQL Server. You tune the database, AWS turns the wrenches.
+
+Which AWS-built relational database is MySQL- and PostgreSQL-compatible with several times the throughput?
+---
+Aurora
+= Amazon Aurora
+---
+Storage replicates six ways across three AZs. Aurora Serverless scales capacity on demand.
+
+What does an RDS Multi-AZ deployment provide?
+---
+A standby replica that takes over automatically if the primary fails
+~ Faster read performance
+~ A cheaper storage tier
+~ Cross-region disaster recovery
+---
+For read scaling you want read replicas instead. Multi-AZ is purely about availability.
+
+Which serverless NoSQL key-value database delivers single-digit-millisecond performance at any scale?
+---
+DynamoDB
+= Amazon DynamoDB
+---
+No servers, no capacity ceiling. DAX adds an in-memory cache for microseconds.
+
+Which service adds an in-memory cache using Redis or Memcached?
+---
+ElastiCache
+= Amazon ElastiCache
+---
+Put it in front of a database to absorb hot reads.
+
+Which petabyte-scale data warehouse runs analytical SQL queries?
+---
+Redshift
+= Amazon Redshift
+---
+Analytics over huge historical datasets. RDS is for transactions, Redshift for analysis.
+
+Which AWS database is purpose-built for graphs and highly connected data?
+---
+Neptune
+~ DynamoDB
+~ DocumentDB
+~ Redshift
+---
+Social networks, recommendations, fraud rings.
+
+Amazon DocumentDB is compatible with which database API?
+---
+MongoDB
+~ Cassandra
+~ Redis
+~ Oracle
+---
+Amazon Keyspaces is the Cassandra-compatible sibling.
+
+Which service migrates databases to AWS with minimal downtime?
+---
+DMS
+= AWS DMS
+= Database Migration Service
+---
+The source stays live during migration. It can also convert between engines with SCT.
+
+Which service centralizes and automates backups across AWS services?
+---
+Backup
+= AWS Backup
+---
+One policy covering EBS, RDS, DynamoDB, EFS, and more, with retention rules.

@@ -1,0 +1,96 @@
+# AWS CCP — Networking & Content Delivery
+
+Which service gives you a logically isolated private network inside AWS?
+---
+VPC
+= Amazon VPC
+= Virtual Private Cloud
+---
+Your own address range, subnets, route tables, and gateways.
+
+What makes a subnet public?
+---
+A route to an internet gateway
+~ Being in a specific Availability Zone
+~ A security group rule
+~ Having more than one instance
+---
+Public and private are properties of the route table, not the subnet itself.
+
+Which VPC component lets instances in private subnets reach out to the internet without being reachable from it?
+---
+NAT gateway
+= NAT
+= a NAT gateway
+---
+Outbound only, for updates and API calls. Inbound still requires a public-facing path.
+
+Which component connects a VPC to the internet?
+---
+internet gateway
+= IGW
+= an internet gateway
+---
+Attached to the VPC, referenced by public subnets' route tables.
+
+Which service is AWS's DNS, translating domain names to IP addresses with health checks and routing policies?
+---
+Route 53
+= Amazon Route 53
+= Route53
+---
+The name is a pun on DNS port 53. Routing policies include latency, weighted, and failover.
+
+Which service caches your content at edge locations so users get it with low latency?
+---
+CloudFront
+= Amazon CloudFront
+---
+The AWS CDN. Also the front line where Shield and WAF absorb attacks.
+
+Which option provides a dedicated, private physical connection from your data center to AWS?
+---
+Direct Connect
+~ Site-to-Site VPN
+~ Internet gateway
+~ Global Accelerator
+---
+Consistent bandwidth, weeks to provision. The VPN is the quick alternative.
+
+Which option encrypts traffic between your network and AWS over the public internet?
+---
+Site-to-Site VPN
+~ Direct Connect
+~ VPC peering
+~ CloudFront
+---
+Up in hours, but throughput and latency ride on internet conditions.
+
+Which service lets you create, publish, and throttle APIs for your backends?
+---
+API Gateway
+= Amazon API Gateway
+---
+REST and WebSocket APIs with auth, throttling, and caching. A natural front door for Lambda.
+
+Which service routes users onto the AWS global network at the nearest edge, using two static anycast IPs?
+---
+Global Accelerator
+~ CloudFront
+~ Route 53
+~ Direct Connect
+---
+CloudFront caches content. Global Accelerator accelerates dynamic traffic all the way to your origin.
+
+Which feature connects two VPCs so they route traffic to each other privately?
+---
+VPC peering
+~ An internet gateway
+~ A NAT gateway
+~ CloudFront
+---
+Peering is one-to-one and not transitive. Transit Gateway is the hub for many VPCs.
+
+VPC {{Flow Logs}} capture information about the IP traffic going to and from network interfaces.
+---
+The raw material for network troubleshooting, and one of GuardDuty's inputs.

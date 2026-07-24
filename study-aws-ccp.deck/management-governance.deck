@@ -1,0 +1,69 @@
+# AWS CCP — Management & Governance
+
+Which service collects metrics and logs from your resources and raises alarms on them?
+---
+CloudWatch
+= Amazon CloudWatch
+---
+An alarm can notify you or trigger an action like scaling out.
+
+Which service records every API call in your account, answering who did what and when?
+---
+CloudTrail
+= AWS CloudTrail
+---
+The audit log. CloudWatch is about performance, CloudTrail about actions.
+
+Which service tracks how your resources are configured over time and checks them against rules?
+---
+Config
+= AWS Config
+---
+CloudTrail says who made the change. Config shows the before and after, and flags drift.
+
+Which service defines your infrastructure as code in JSON or YAML templates?
+---
+CloudFormation
+= AWS CloudFormation
+---
+A stack is created, updated, and deleted as a unit. The CDK compiles real code down to it.
+
+Which service manages your fleet at scale with patching, run commands, and a parameter store?
+---
+Systems Manager
+= AWS Systems Manager
+= SSM
+---
+Session Manager also gives shell access without opening SSH ports.
+
+Which service shows AWS service outages and events that affect your specific account?
+---
+Health Dashboard
+= AWS Health Dashboard
+= AWS Health
+= Personal Health Dashboard
+---
+The public status page for everyone, plus a personalized view for your resources.
+
+Which service sets up and governs a secure multi-account environment with guardrails?
+---
+Control Tower
+= AWS Control Tower
+---
+A landing zone built on Organizations. Guardrails are preconfigured SCPs and Config rules.
+
+Which developer service automates the full release pipeline from source to deployment?
+---
+CodePipeline
+~ CodeBuild
+~ CodeDeploy
+~ CloudFormation
+---
+CodeBuild compiles and tests, CodeDeploy pushes to targets, CodePipeline chains the stages.
+
+Which service gives you a managed, browser-based shell with the AWS CLI preinstalled?
+---
+CloudShell
+= AWS CloudShell
+---
+Free, already authenticated as you, and reachable from the console toolbar.

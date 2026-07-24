@@ -1,0 +1,130 @@
+# AWS CCP — Integration, Analytics & AI
+
+Which service provides message queues that decouple application components?
+---
+SQS
+= Amazon SQS
+= Simple Queue Service
+---
+Producers drop messages, consumers pull them when ready. Nothing is lost if a consumer is down.
+
+Which pub/sub service pushes one message out to many subscribers such as email, SMS, and other services?
+---
+SNS
+= Amazon SNS
+= Simple Notification Service
+---
+SNS pushes, SQS is pulled. Fanning SNS into SQS queues is a classic pattern.
+
+Which serverless event bus routes events between AWS services and SaaS applications?
+---
+EventBridge
+= Amazon EventBridge
+---
+Rules match events and route them to targets. It grew out of CloudWatch Events.
+
+Which service coordinates multi-step serverless workflows as visual state machines?
+---
+Step Functions
+= AWS Step Functions
+---
+Retries, branching, and human-approval waits between Lambda calls, without glue code.
+
+Which service runs standard SQL queries directly against data sitting in S3?
+---
+Athena
+= Amazon Athena
+---
+Serverless, pay per query. A favorite exam answer for one-off log analysis.
+
+Which service builds BI dashboards and visualizations from your data?
+---
+QuickSight
+= Amazon QuickSight
+---
+The AWS answer to Tableau and Power BI.
+
+Which serverless service discovers, catalogs, and transforms data for analytics?
+---
+Glue
+= AWS Glue
+---
+ETL: extract, transform, load. Its Data Catalog feeds Athena and Redshift.
+
+Which service collects and processes real-time streaming data such as clickstreams?
+---
+Kinesis
+= Amazon Kinesis
+---
+Real time is the keyword. Firehose is the flavor that just delivers streams into S3 or Redshift.
+
+Which service runs big data frameworks like Apache Spark and Hadoop on managed clusters?
+---
+EMR
+= Amazon EMR
+= Elastic MapReduce
+---
+Heavy-duty processing over massive datasets.
+
+Which service lets developers build, train, and deploy machine learning models?
+---
+SageMaker
+= Amazon SageMaker
+---
+The full ML workbench. The ready-made AI services below need no ML expertise at all.
+
+Which service provides API access to generative AI foundation models?
+---
+Bedrock
+= Amazon Bedrock
+---
+Models from Anthropic, Amazon, Meta, and others behind one serverless API.
+
+Which AI service identifies objects, faces, and text in images and video?
+---
+Rekognition
+= Amazon Rekognition
+---
+Content moderation and celebrity detection included.
+
+Which AI service turns text into lifelike speech?
+---
+Polly
+= Amazon Polly
+---
+Named for a parrot. Transcribe is the reverse direction.
+
+Which AI service converts recorded speech into text?
+---
+Transcribe
+= Amazon Transcribe
+---
+Subtitles and call-center transcripts. Translate handles languages, Comprehend the meaning.
+
+Which AI service finds sentiment, entities, and key phrases in text?
+---
+Comprehend
+= Amazon Comprehend
+---
+Natural language processing as an API. Point it at reviews or support tickets.
+
+Which AI service builds conversational chatbots with voice and text?
+---
+Lex
+= Amazon Lex
+---
+The technology behind Alexa, minus the speaker.
+
+Which AI service extracts text, tables, and form fields from scanned documents?
+---
+Textract
+= Amazon Textract
+---
+Beyond OCR: it understands structure like key-value pairs on a form.
+
+Which service runs a full cloud-based contact center?
+---
+Connect
+= Amazon Connect
+---
+Phone tree to agent desktop, priced per use.
