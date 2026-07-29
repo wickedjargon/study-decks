@@ -1,0 +1,64 @@
+# Mahjong Character Tiles — Japanese Set
+# answer-mode: type
+# answer-case: insensitive
+
+# The character suit (man 萬子) is the one suit with nothing pictorial to
+# count: just hanzi. Each question shows the tile, plays its Japanese
+# reading, and displays the characters with their romaji. Type the English
+# name of the tile.
+
+# ── Characters (man 萬子) ──
+
+@img wiki-tiles/MJw1-.png
+@audio audio/man1.mp3
+一萬 ・ ii-man
+---
+1 Characters
+
+@img wiki-tiles/MJw2-.png
+@audio audio/man2.mp3
+二萬 ・ ryan-man
+---
+2 Characters
+
+@img wiki-tiles/MJw3-.png
+@audio audio/man3.mp3
+三萬 ・ san-man
+---
+3 Characters
+
+@img wiki-tiles/MJw4-.png
+@audio audio/man4.mp3
+四萬 ・ suu-man
+---
+4 Characters
+
+@img wiki-tiles/MJw5-.png
+@audio audio/man5.mp3
+五萬 ・ uu-man
+---
+5 Characters
+
+@img wiki-tiles/MJw6-.png
+@audio audio/man6.mp3
+六萬 ・ roo-man
+---
+6 Characters
+
+@img wiki-tiles/MJw7-.png
+@audio audio/man7.mp3
+七萬 ・ chii-man
+---
+7 Characters
+
+@img wiki-tiles/MJw8-.png
+@audio audio/man8.mp3
+八萬 ・ paa-man
+---
+8 Characters
+
+@img wiki-tiles/MJw9-.png
+@audio audio/man9.mp3
+九萬 ・ kyuu-man
+---
+9 Characters

@@ -1,0 +1,165 @@
+# Mahjong Tiles — Japanese Set, Everything but Characters
+# answer-mode: type
+# answer-case: insensitive
+
+# Winds, dragons, dots and bamboos. Each question shows the tile, plays its
+# Japanese reading, and displays the characters with their romaji. Type the
+# English name of the tile.
+
+# ── Winds (kaze 風牌) ──
+
+@img wiki-tiles/MJf1-.png
+@audio audio/ton.mp3
+東 ・ ton
+---
+East Wind
+
+@img wiki-tiles/MJf2-.png
+@audio audio/nan.mp3
+南 ・ nan
+---
+South Wind
+
+@img wiki-tiles/MJf3-.png
+@audio audio/shaa.mp3
+西 ・ shaa
+---
+West Wind
+
+@img wiki-tiles/MJf4-.png
+@audio audio/pei.mp3
+北 ・ pei
+---
+North Wind
+
+# ── Dragons (sangen 三元牌) ──
+
+@img wiki-tiles/MJd1-.png
+@audio audio/chun.mp3
+中 ・ chun
+---
+Red Dragon
+
+@img wiki-tiles/MJd2-.png
+@audio audio/hatsu.mp3
+發 ・ hatsu
+---
+Green Dragon
+
+@img wiki-tiles/MJd3-.png
+@audio audio/haku.mp3
+白 ・ haku
+---
+White Dragon
+
+# ── Dots (pin 筒子) ──
+
+@img wiki-tiles/MJt1-.png
+@audio audio/pin1.mp3
+一筒 ・ ii-pin
+---
+1 Dots
+
+@img wiki-tiles/MJt2-.png
+@audio audio/pin2.mp3
+二筒 ・ ryan-pin
+---
+2 Dots
+
+@img wiki-tiles/MJt3-.png
+@audio audio/pin3.mp3
+三筒 ・ san-pin
+---
+3 Dots
+
+@img wiki-tiles/MJt4-.png
+@audio audio/pin4.mp3
+四筒 ・ suu-pin
+---
+4 Dots
+
+@img wiki-tiles/MJt5-.png
+@audio audio/pin5.mp3
+五筒 ・ uu-pin
+---
+5 Dots
+
+@img wiki-tiles/MJt6-.png
+@audio audio/pin6.mp3
+六筒 ・ roo-pin
+---
+6 Dots
+
+@img wiki-tiles/MJt7-.png
+@audio audio/pin7.mp3
+七筒 ・ chii-pin
+---
+7 Dots
+
+@img wiki-tiles/MJt8-.png
+@audio audio/pin8.mp3
+八筒 ・ paa-pin
+---
+8 Dots
+
+@img wiki-tiles/MJt9-.png
+@audio audio/pin9.mp3
+九筒 ・ kyuu-pin
+---
+9 Dots
+
+# ── Bamboos (sou 索子) ──
+
+@img wiki-tiles/MJs1-.png
+@audio audio/sou1.mp3
+一索 ・ ii-sou
+---
+1 Bamboos
+
+@img wiki-tiles/MJs2-.png
+@audio audio/sou2.mp3
+二索 ・ ryan-sou
+---
+2 Bamboos
+
+@img wiki-tiles/MJs3-.png
+@audio audio/sou3.mp3
+三索 ・ san-sou
+---
+3 Bamboos
+
+@img wiki-tiles/MJs4-.png
+@audio audio/sou4.mp3
+四索 ・ suu-sou
+---
+4 Bamboos
+
+@img wiki-tiles/MJs5-.png
+@audio audio/sou5.mp3
+五索 ・ uu-sou
+---
+5 Bamboos
+
+@img wiki-tiles/MJs6-.png
+@audio audio/sou6.mp3
+六索 ・ roo-sou
+---
+6 Bamboos
+
+@img wiki-tiles/MJs7-.png
+@audio audio/sou7.mp3
+七索 ・ chii-sou
+---
+7 Bamboos
+
+@img wiki-tiles/MJs8-.png
+@audio audio/sou8.mp3
+八索 ・ paa-sou
+---
+8 Bamboos
+
+@img wiki-tiles/MJs9-.png
+@audio audio/sou9.mp3
+九索 ・ kyuu-sou
+---
+9 Bamboos
