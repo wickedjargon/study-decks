@@ -1,0 +1,38 @@
+# Chinese Mahjong — Calls You Say During Play
+# answer-mode: choice
+# choice-count: 4
+# answer-case: insensitive
+
+# Each card plays the spoken Chinese call. The Japanese counterpart is shown
+# for pronunciation comparison — pon/chii/kan were borrowed from these hanzi.
+# (Chinese mahjong has no Riichi declaration.)
+
+@audio audio/chi.mp3
+Chī ・ 吃   (JP: Chii チー)
+---
+Claim the previous player's discard to complete a sequence (three in a row)
+
+@audio audio/peng.mp3
+Pèng ・ 碰   (JP: Pon ポン)
+---
+Claim any player's discard to complete a triplet (three identical tiles)
+
+@audio audio/gang.mp3
+Gàng ・ 杠   (JP: Kan カン)
+---
+Declare a set of four identical tiles, then draw a replacement
+
+@audio audio/hu.mp3
+Hú ・ 胡 / 和   (JP: Ron ロン)
+---
+Declare a win — completing your hand, e.g. on another player's discard
+
+@audio audio/zimo.mp3
+Zìmō ・ 自摸   (JP: Tsumo ツモ)
+---
+Win on a tile you drew yourself
+
+@audio audio/tingpai.mp3
+Tīng pái ・ 听牌   (JP: Tenpai テンパイ)
+---
+Your hand is ready — one tile away from winning

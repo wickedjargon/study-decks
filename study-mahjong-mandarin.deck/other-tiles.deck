@@ -1,0 +1,218 @@
+# Mahjong Tiles — Chinese Set, Everything but Characters
+# answer-mode: type
+# answer-case: insensitive
+
+# Winds, dragons, dots, bamboos, plus the eight flower and season tiles the
+# Japanese game leaves out. Each question shows the tile, plays its Mandarin
+# reading, and displays the simplified hanzi with pinyin. Type the English
+# name of the tile.
+
+# ── Winds (fēng 风牌) ──
+
+@img wiki-tiles/MJf1-.png
+@audio audio/dongfeng.mp3
+东风 ・ dōng fēng
+---
+East Wind
+
+@img wiki-tiles/MJf2-.png
+@audio audio/nanfeng.mp3
+南风 ・ nán fēng
+---
+South Wind
+
+@img wiki-tiles/MJf3-.png
+@audio audio/xifeng.mp3
+西风 ・ xī fēng
+---
+West Wind
+
+@img wiki-tiles/MJf4-.png
+@audio audio/beifeng.mp3
+北风 ・ běi fēng
+---
+North Wind
+
+# ── Dragons (jiàn 箭牌) ──
+
+@img wiki-tiles/MJd1-.png
+@audio audio/hongzhong.mp3
+红中 ・ hóng zhōng
+---
+Red Dragon
+
+@img wiki-tiles/MJd2-.png
+@audio audio/facai.mp3
+发财 ・ fā cái
+---
+Green Dragon
+
+@img wiki-tiles/MJd3-.png
+@audio audio/baiban.mp3
+白板 ・ bái bǎn
+---
+White Dragon
+
+# ── Dots (tǒng 筒子) ──
+
+@img wiki-tiles/MJt1-.png
+@audio audio/tong1.mp3
+一筒 ・ yī tǒng
+---
+1 Dots
+
+@img wiki-tiles/MJt2-.png
+@audio audio/tong2.mp3
+二筒 ・ èr tǒng
+---
+2 Dots
+
+@img wiki-tiles/MJt3-.png
+@audio audio/tong3.mp3
+三筒 ・ sān tǒng
+---
+3 Dots
+
+@img wiki-tiles/MJt4-.png
+@audio audio/tong4.mp3
+四筒 ・ sì tǒng
+---
+4 Dots
+
+@img wiki-tiles/MJt5-.png
+@audio audio/tong5.mp3
+五筒 ・ wǔ tǒng
+---
+5 Dots
+
+@img wiki-tiles/MJt6-.png
+@audio audio/tong6.mp3
+六筒 ・ liù tǒng
+---
+6 Dots
+
+@img wiki-tiles/MJt7-.png
+@audio audio/tong7.mp3
+七筒 ・ qī tǒng
+---
+7 Dots
+
+@img wiki-tiles/MJt8-.png
+@audio audio/tong8.mp3
+八筒 ・ bā tǒng
+---
+8 Dots
+
+@img wiki-tiles/MJt9-.png
+@audio audio/tong9.mp3
+九筒 ・ jiǔ tǒng
+---
+9 Dots
+
+# ── Bamboos (tiáo 条子) ──
+
+@img wiki-tiles/MJs1-.png
+@audio audio/tiao1.mp3
+一条 ・ yī tiáo
+---
+1 Bamboos
+
+@img wiki-tiles/MJs2-.png
+@audio audio/tiao2.mp3
+二条 ・ èr tiáo
+---
+2 Bamboos
+
+@img wiki-tiles/MJs3-.png
+@audio audio/tiao3.mp3
+三条 ・ sān tiáo
+---
+3 Bamboos
+
+@img wiki-tiles/MJs4-.png
+@audio audio/tiao4.mp3
+四条 ・ sì tiáo
+---
+4 Bamboos
+
+@img wiki-tiles/MJs5-.png
+@audio audio/tiao5.mp3
+五条 ・ wǔ tiáo
+---
+5 Bamboos
+
+@img wiki-tiles/MJs6-.png
+@audio audio/tiao6.mp3
+六条 ・ liù tiáo
+---
+6 Bamboos
+
+@img wiki-tiles/MJs7-.png
+@audio audio/tiao7.mp3
+七条 ・ qī tiáo
+---
+7 Bamboos
+
+@img wiki-tiles/MJs8-.png
+@audio audio/tiao8.mp3
+八条 ・ bā tiáo
+---
+8 Bamboos
+
+@img wiki-tiles/MJs9-.png
+@audio audio/tiao9.mp3
+九条 ・ jiǔ tiáo
+---
+9 Bamboos
+
+# ── Flowers (huā 花牌) ──
+
+@img wiki-tiles/MJh1-.png
+@audio audio/mei.mp3
+梅 ・ méi
+---
+Plum
+
+@img wiki-tiles/MJh2-.png
+@audio audio/lan.mp3
+兰 ・ lán
+---
+Orchid
+
+@img wiki-tiles/MJh3-.png
+@audio audio/ju.mp3
+菊 ・ jú
+---
+Chrysanthemum
+
+@img wiki-tiles/MJh4-.png
+@audio audio/zhu.mp3
+竹 ・ zhú
+---
+Bamboo
+
+# ── Seasons (jì 季牌) ──
+
+@img wiki-tiles/MJh5-.png
+@audio audio/chun.mp3
+春 ・ chūn
+---
+Spring
+
+@img wiki-tiles/MJh6-.png
+@audio audio/xia.mp3
+夏 ・ xià
+---
+Summer
+
+@img wiki-tiles/MJh7-.png
+@audio audio/qiu.mp3
+秋 ・ qiū
+---
+Autumn
+
+@img wiki-tiles/MJh8-.png
+@audio audio/dong.mp3
+冬 ・ dōng
+---
+Winter

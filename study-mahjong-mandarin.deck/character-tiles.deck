@@ -1,0 +1,64 @@
+# Mahjong Character Tiles — Chinese Set
+# answer-mode: type
+# answer-case: insensitive
+
+# The character suit (wàn 万子) is the one suit with nothing pictorial to
+# count: just hanzi. Each question shows the tile, plays its Mandarin
+# reading, and displays the simplified hanzi with pinyin. Type the English
+# name of the tile.
+
+# ── Characters (wàn 万子) ──
+
+@img wiki-tiles/MJw1-.png
+@audio audio/wan1.mp3
+一万 ・ yī wàn
+---
+1 Characters
+
+@img wiki-tiles/MJw2-.png
+@audio audio/wan2.mp3
+二万 ・ èr wàn
+---
+2 Characters
+
+@img wiki-tiles/MJw3-.png
+@audio audio/wan3.mp3
+三万 ・ sān wàn
+---
+3 Characters
+
+@img wiki-tiles/MJw4-.png
+@audio audio/wan4.mp3
+四万 ・ sì wàn
+---
+4 Characters
+
+@img wiki-tiles/MJw5-.png
+@audio audio/wan5.mp3
+五万 ・ wǔ wàn
+---
+5 Characters
+
+@img wiki-tiles/MJw6-.png
+@audio audio/wan6.mp3
+六万 ・ liù wàn
+---
+6 Characters
+
+@img wiki-tiles/MJw7-.png
+@audio audio/wan7.mp3
+七万 ・ qī wàn
+---
+7 Characters
+
+@img wiki-tiles/MJw8-.png
+@audio audio/wan8.mp3
+八万 ・ bā wàn
+---
+8 Characters
+
+@img wiki-tiles/MJw9-.png
+@audio audio/wan9.mp3
+九万 ・ jiǔ wàn
+---
+9 Characters
